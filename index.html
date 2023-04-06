@@ -6,32 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title> Grey Day </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Grey Day Tour</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicone/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicone/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicone/favicon-16x16.png">
+    <link rel="manifest" href="favicone/site.webmanifest">
+    <link rel="mask-icon" href="favicone/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="faviconemsapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
 
  <!-- Barre de navigation du site        -->
     <header>
-    <div class="nav-bar">
-        <ul>
-            <li class="nav-travel" href="">Book/Rerservations</li>
-            <li class="nav-travel" href="">Program</li>
-            <li class="nav-travel" href="">Informations</li>
-        </ul>
-        <h1>Grey Day Tour</h1>
-        <button class="contact-us">Contact Us</button>
-    </div>
+        <nav class="header">
+            <h1 ><a href="index.html" class="logo-text">GreyDay Tour</a></h1>
+            <ul class="e">
+                <li class="nav-travel" href=""><a href="book.html" class="nav-link">Book</a></li>
+                <li class="nav-travel" href=""><a href="program.html" class="nav-link">Program</a></li>
+                <li class="nav-travel" href=""><a href="Informations.html" class="nav-link">Informations</a></li>
+            </ul>
+            <button  onclick="window.location.href='formulaire.html'" class="contact-us">Contact Us</button>
+        </nav>
+        
     </header>
 
 <!-- Première partie  -->
-
+<div class="corps">
     <div class="main-info">
-        <h1>SUICIDEBOYS  GREY DAY TOUR EUROPE</h1>
+        <div class="main-info-1">
+            <h1>SUICIDEBOYS  GREY DAY TOUR EUROPE</h1>
         <p class="date-condense">14/03/2023</p>
-        <img src="pictures/mains pages/suicideboys-tickets_160278_1453610_222x222.jpg" alt="logo du Grey Day Europe">
+        </div>
+        <div class="main-info-2">
+            <img src="pictures/mains pages/suicideboys-tickets_160278_1453610_222x222.jpg" alt="logo du Grey Day Europe">
+        </div>
     </div>
-
+    
 <!-- Partie pour réserver la place       -->
 
     <div class="book-places">
@@ -41,12 +54,42 @@
             <p class="date-day-hour">Tuesd. 19:00</p>
         </div>
         <div class="partbook-2">
+            <div class="description">
             <p class="show-name">SUICIDEBOYS GREY DAY EUROPE TOUR</p>
-            <p class="arrondissement">Paris 19</p>
-            <p class="place-name"> ZENITH PARIS - LAVILLETTE</p>
+            <a href="https://www.google.fr/maps/place/Le+Zénith+Paris+-+La+Villette/@48.8950574,2.3914881,17.77z/data=!3m1!5s0x47e66db567755757:0x3fe8c5e5a75b6401!4m15!1m8!3m7!1s0x47e66dd75390f999:0x7214db08363c60a1!2sVillette,+75019+Paris!3b1!8m2!3d48.8906167!4d2.3767267!16s%2Fg%2F11bc578hwc!3m5!1s0x47e66dca02eb4cd3:0xf0d7efda07904839!8m2!3d48.8942046!4d2.3932285!16s%2Fm%2F0fqqdb_" class="link-reservation">
+                <div class="alignement">
+                <i id=icon-location class="fa-solid fa-location-dot"></i>
+                <p class="arrondissement">Paris 19</p>
+                </div>
+                <p class="place-name"> ZENITH PARIS - LAVILLETTE</p>
+            </a>
+            </div>
+        </div>
             <button class="avaible-from">AVAIBLE FROM 54€</button>
+    </div>
+
+<!-- leur histoire + youtube -->
+<div class="more-info">
+    <div class="Story">
+        <div class="left-text">
+            <h1>Our story</h1>
+            <p>The $uicideboy$ are an American hip-hop group. It is made up of Aristos Petrou (Ruby Da Cherry) and Scott Arceneaux, Jr. ($lick $loth, $crim), two cousins from New Orleans, Louisiana. The duo is under the American independent label G*59 Records.</p>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nqtobIpZt68?start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
+    <div class="Story2">
+        <div class="picture-story-1">
+            <img src="/pictures/story/1.jpg" alt="Suicideboys sur scène" class="picture1">
+         </div>
+        <div class="right-text">
+            <h1>Our tour</h1>
+            <p>Special guests: Shakewell, Chetta and the American and Ski Mask The Slump God, who will open the Gray Day Tour. $uicideboy$ is having an exceptional year in 2022, as he is the 27th most listened to artist of the year, all genres combined , with 1.9 billion streams (as of October 18), according to HITS MAGAZINE </p>
+        </div>
+    </div>
+</div>
+    
 
 <!-- Description + boutton pour remonter vers le haut  -->
 
@@ -58,19 +101,31 @@
             Tickets remain valid.
         </p>
     </div>
-
+</div>
 <!-- Footer -->
-
-<div class="social"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a><a href="#"><i class="fa-brands fa-snapchat"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></i></a></div>
-<ul class="list-inline">
-    <li class="list-inline-item"><a href="#">Home</a></li>
-    <li class="list-inline-item"><a href="#">Services</a></li>
-    <li class="list-inline-item"><a href="#">About</a></li>
-    <li class="list-inline-item"><a href="#">Terms</a></li>
-    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-</ul>
-<p class="copyright">Grey Day Europe © 2022</p>
-</footer>
+<footer>
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    <div class="row">
+        <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+        </ul>
+    </div>
+    
+    <div class="row">
+    Grey Day Tour Copyright © 2023 Grey Day Tour - All rights reserved || Designed By: Antino 
+    </div>
+    </div>
+    </footer>
 </body>
 
 </html>

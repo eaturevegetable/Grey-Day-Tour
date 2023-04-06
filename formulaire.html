@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaire de contact</title>
+  </head>
+  <body>
+<!-- Barre de navigation -->
+    <header>
+        <nav class="header">
+            <h1 ><a href="index.html" class="logo-text">GreyDay Tour</a></h1>
+            <ul class="e">
+                <li class="nav-travel" href=""><a href="book.html" class="nav-link">Book</a></li>
+                <li class="nav-travel" href=""><a href="program.html" class="nav-link">Program</a></li>
+                <li class="nav-travel" href=""><a href="Informations.html" class="nav-link">Informations</a></li>
+            </ul>
+            <button  onclick="window.location.href='formulaire.html'" class="contact-us">Contact Us</button>
+        </nav>
+        
+    </header>
+
+<!-- Contact Form -->
+    <h1>Contact form</h1>
+    <form id="contact-form">
+      <div>
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">e-mail :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="subject">Subject :</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      <div>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div>
+        <button type="submit" id="submit-btn">Submit</button>
+      </div>
+    </form>
+
+    <script>
+      const form = document.querySelector('#contact-form');
+      const nameInput = document.querySelector('#name');
+      const emailInput = document.querySelector('#email');
+      const subjectInput = document.querySelector('#subject');
+      const messageInput = document.querySelector('#message');
+      const submitBtn = document.querySelector('#submit-btn');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const subject = subjectInput.value.trim();
+        const message = messageInput.value.trim();
+
+        // Ici vous pouvez envoyer les données à votre backend ou faire autre chose avec elles
+        console.log(name, email, subject, message);
+
+        // Ici vous pouvez afficher un message de confirmation
+        alert('Merci de nous avoir contacté ! Nous reviendrons vers vous dès que possible.');
+        
+        // Réinitialisation du formulaire
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
