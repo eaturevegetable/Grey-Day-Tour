@@ -2,8 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="formulaire.css">
-    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact us</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicone/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicone/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicone/favicon-16x16.png">
+    <link rel="manifest" href="favicone/site.webmanifest">
+    <link rel="mask-icon" href="favicone/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="faviconemsapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
 <!-- Barre de navigation -->
@@ -21,6 +32,7 @@
     </header>
 
 <!-- Contact Form -->
+<div class="contact-form">
     <h1>Contact form</h1>
     <form id="contact-form">
       <div>
@@ -43,6 +55,7 @@
         <button type="submit" id="submit-btn">Submit</button>
       </div>
     </form>
+</div>
 
     <script>
       const form = document.querySelector('#contact-form');
@@ -70,5 +83,31 @@
         form.reset();
       });
     </script>
+
+<!-- Footer -->
+<footer>
+<div class="footer">
+    <div class="row">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+<div class="row">
+    <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+    </ul>
+</div>
+
+<div class="row">
+Grey Day Tour Copyright © 2023 Grey Day Tour - All rights reserved || Designed By: Antino 
+</div>
+</div>
+</footer>
+
   </body>
 </html>

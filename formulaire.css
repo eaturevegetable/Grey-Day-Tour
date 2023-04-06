@@ -4,10 +4,10 @@
 body{
     background-color: #3c3c3c;
     font-family: 'Kanit';
+    margin: 0px;
   }
   
   .corps{
-    margin: 10px;
   }
   
   h1{
@@ -82,7 +82,12 @@ body{
       color: #fff;
       transform: scale(1.1);
     }
-  
+
+/* Form */
+
+.contact-form h1{
+  text-align: center;
+}
   form {
     max-width: 600px;
     margin: 50px auto;
@@ -108,7 +113,7 @@ body{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffffc8;
     box-sizing: border-box;
   }
   
@@ -129,3 +134,58 @@ body{
   button[type="submit"]:hover {
     background-color: #3e8e41;
   }
+/* Footer */
+
+  .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }

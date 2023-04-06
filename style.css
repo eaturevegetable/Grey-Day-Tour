@@ -13,7 +13,6 @@ body{
 }
 
 .corps{
-  margin: 10px;
 }
 
 h1{
@@ -95,10 +94,15 @@ button.contact-us {
   display: flex;
   justify-content: space-evenly;
   background-color: #3c3c3c important!;
+  margin-top: 10px;
 }
 
 .main-info-1{
-  margin-top: 5%;
+  vertical-align: center;
+}
+
+.main-info-1 img{
+  height: 250px;
 }
 
 .main-info h1{
@@ -111,9 +115,9 @@ button.contact-us {
   justify-content: center;
 }
 
-.main-info img{
-  background-color: blue;
-
+.main-info-2 img{
+  height: 350px;
+  width: max-content;
 }
 
 /* Réserver une place */
@@ -222,25 +226,23 @@ button.contact-us {
 /* leur histoire + youtube */
 
 .more-info{
-  background-color: #252525;
-  border-radius: 15px;
+  color: rgba(255, 255, 255, 0.74);
 }
 
 .Story{
   display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
   flex-direction: row;
-  background-color:#3c3c3c;
+  background-color:#1f1f1f;
   justify-content: space-evenly;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 15px;
 }
 
 .left-text{
   max-width: 400px;
   text-align: center;
   font-size: 1.4em;
+  background-color: #1A1A1A;
+  border-radius: 5%;
 }
 
 .video{
@@ -248,17 +250,18 @@ button.contact-us {
 
 .Story2{
   display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
   flex-direction: row ;
-  background-color:#3c3c3c;
+  background-color:#1f1f1f;
   justify-content: space-evenly;
+  padding: 15px;
 }
 
 .right-text{
   max-width: 400px;
   text-align: center;
   font-size: 1.4em;
+  background-color: #1A1A1A;
+  border-radius: 5%;
 }
 
 .picture1{
