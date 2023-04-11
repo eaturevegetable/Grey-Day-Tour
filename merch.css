@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif;
+    padding: 0;
+    margin: 0px;
+    overflow-x:hidden;
+}
+
+body{
+  background-color: #3c3c3c;
+}
+
+
+h1{
+    font-family: 'Metal Mania', cursive;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(205, 204, 204);
+}
+
+/* header */
+
+.logo-text{
+    text-decoration: none;
+    font-size: 48px;
+    color: aliceblue;
+    font-family: 'Metal Mania', cursive;
+}
+
+.logo-text:hover{
+    color: #3c3c3c;
+}
+
+.header{
+  padding: 20px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav-travel{
+    list-style: none;
+}
+
+.e{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.nav-link:hover{
+    color: gray;
+}
+
+button.contact-us {
+    max-height: 60px;
+    text-align: center;
+    background-color: #fff;
+    color: #3c3c3c;
+    border: 2px solid #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 30px; /* Reduce padding to make button smaller */
+    font-size: 15px; /* Reduce font size to make text fit */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 15px;
+}
+
+  button.contact-us:hover {
+    background-color: #3c3c3c;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+/* Section Vente */
+
+.merch {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .merch h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .merch-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .item p {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  .item button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+/* Footer */
+
+.footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
