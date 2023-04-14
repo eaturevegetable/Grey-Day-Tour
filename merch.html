@@ -32,6 +32,65 @@
     </header>
 
 <!-- Section de vente -->
+
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <img src="/pictures/caroussel/chetta.png" style="width:100%">
+  </div>
+
+  <div class="Containers">
+    <img src="/pictures/caroussel/shakewell.png" style="width:100%">
+  </div>
+
+  <div class="Containers">
+    <img src="/pictures/caroussel/germ.png" style="width:100%">
+  </div>
+
+  <div class="Containers">
+    <img src="/pictures/caroussel/skimask.png" style="width:100%">
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<script>
+var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
+</script>
+
+
 <section class="merch">
     <h2>MERCH</h2>
     <div class="merch-items">
@@ -53,8 +112,27 @@
         <p>$25</p>
         <button>Add to Cart</button>
       </div>
+    <div class="item">
+      <img src="/pictures/merch/comming-soon.png" alt="Merchandise 4">
+      <h3>T-shirt 4</h3>
+      <p>$20</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="/pictures/merch/comming-soon.png" alt="Merchandise 5">
+      <h3>T-shirt 5</h3>
+      <p>$15</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="/pictures/merch/comming-soon.png" alt="Merchandise 6">
+      <h3>T-shirt 6</h3>
+      <p>$25</p>
+      <button>Add to Cart</button>
     </div>
   </section>
+
+
 
   <!-- Footer -->
 <footer>

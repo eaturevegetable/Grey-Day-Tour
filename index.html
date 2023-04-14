@@ -15,6 +15,7 @@
     <link rel="mask-icon" href="favicone/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="faviconemsapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -50,6 +51,25 @@
     
 <!-- Partie pour réserver la place       -->
 
+    <!-- <div class="search">
+        <h1>Search</h1>
+        <input type="search" placeholder="type to search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <script>
+        function Getthelement(){
+            var a = docum
+        }
+
+    </script> -->
+
+    <div class="search-wrapper">
+        <label for="" class="search">
+            <input type="search" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+
     <div class="book-places">
         <div class="partbook-1">
             <p class="date-day">14</p>
@@ -71,10 +91,98 @@
         <div class="partbook-3">
             <p>Avaible</p>
             <button class="avaible-from">Get yours FROM 54€</button>
+        </div>     
+    </div> 
+    <div class="book-places">
+        <div class="partbook-1">
+            <p class="date-day">14</p>
+            <p class="date-month-year">march 2023</p>
+            <p class="date-day-hour">Tuesd. 19:00</p>
         </div>
-            
+        <div class="partbook-2">
+            <div class="description">
+            <p class="show-name">SUICIDEBOYS GREY DAY EUROPE TOUR</p>
+            <a href="https://www.google.fr/maps/place/Le+Zénith+Paris+-+La+Villette/@48.8950574,2.3914881,17.77z/data=!3m1!5s0x47e66db567755757:0x3fe8c5e5a75b6401!4m15!1m8!3m7!1s0x47e66dd75390f999:0x7214db08363c60a1!2sVillette,+75019+Paris!3b1!8m2!3d48.8906167!4d2.3767267!16s%2Fg%2F11bc578hwc!3m5!1s0x47e66dca02eb4cd3:0xf0d7efda07904839!8m2!3d48.8942046!4d2.3932285!16s%2Fm%2F0fqqdb_" class="link-reservation">
+                <div class="alignement">
+                <i id=icon-location class="fa-solid fa-location-dot"></i>
+                <p class="arrondissement">Paris 19</p>
+                </div>
+                <p class="place-name"> ZENITH PARIS - LAVILLETTE</p>
+            </a>
+            </div>            
+        </div>
+        <div class="partbook-3">
+            <p>Avaible</p>
+            <button class="avaible-from">Get yours FROM 54€</button>
+        </div>     
     </div> 
 
+<!-- Add a button to toggle "Show More" and "Show Less" -->
+<button class="show-more" id="toggle-btn">Show More</button>
+
+<!-- Add a container for all the "book-places" elements -->
+<div id="book-places-container">
+    <div class="book-places">
+        <div class="partbook-1">
+            <p class="date-day">14</p>
+            <p class="date-month-year">march 2023</p>
+            <p class="date-day-hour">Tuesd. 19:00</p>
+        </div>
+        <div class="partbook-2">
+            <div class="description">
+            <p class="show-name">SUICIDEBOYS GREY DAY EUROPE TOUR</p>
+            <a href="https://www.google.fr/maps/place/Le+Zénith+Paris+-+La+Villette/@48.8950574,2.3914881,17.77z/data=!3m1!5s0x47e66db567755757:0x3fe8c5e5a75b6401!4m15!1m8!3m7!1s0x47e66dd75390f999:0x7214db08363c60a1!2sVillette,+75019+Paris!3b1!8m2!3d48.8906167!4d2.3767267!16s%2Fg%2F11bc578hwc!3m5!1s0x47e66dca02eb4cd3:0xf0d7efda07904839!8m2!3d48.8942046!4d2.3932285!16s%2Fm%2F0fqqdb_" class="link-reservation">
+                <div class="alignement">
+                <i id=icon-location class="fa-solid fa-location-dot"></i>
+                <p class="arrondissement">Paris 19</p>
+                </div>
+                <p class="place-name"> ZENITH PARIS - LAVILLETTE</p>
+            </a>
+            </div>            
+        </div>
+        <div class="partbook-3">
+            <p>Avaible</p>
+            <button class="avaible-from">Get yours FROM 54€</button>
+        </div>     
+    </div> 
+    <div class="book-places">
+        <!-- content here... -->
+    </div>
+    <!-- add more "book-places" elements as needed... -->
+</div>
+
+<script>
+    // get references to the relevant HTML elements
+    const toggleBtn = document.getElementById("toggle-btn");
+    const bookPlacesContainer = document.getElementById("book-places-container");
+
+    // set up the initial state
+    let isExpanded = false;
+    const MAX_ITEMS = 0;
+    const bookPlaces = bookPlacesContainer.querySelectorAll(".book-places");
+    for (let i = MAX_ITEMS; i < bookPlaces.length; i++) {
+        bookPlaces[i].style.display = "none";
+    }
+
+    // add an event listener to the toggle button
+    toggleBtn.addEventListener("click", function() {
+        // toggle the isExpanded flag
+        isExpanded = !isExpanded;
+
+        // update the button text and book-places visibility based on the new state
+        if (isExpanded) {
+            toggleBtn.innerText = "Show Less";
+            for (let i = 0; i < bookPlaces.length; i++) {
+                bookPlaces[i].style.display = "flex";
+            }
+        } else {
+            toggleBtn.innerText = "Show More";
+            for (let i = MAX_ITEMS; i < bookPlaces.length; i++) {
+                bookPlaces[i].style.display = "none";
+            }
+        }
+    });
+</script>
       
 <!-- leur histoire + youtube -->
 <div class="more-info">
