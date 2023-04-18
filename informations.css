@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif;
+    padding: 0;
+    margin: 0px;
+    overflow-x:hidden;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+
+h1{
+    font-family: 'Metal Mania', cursive;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(205, 204, 204);
+}
+
+
+* {box-sizing:border-box}
+
+/* header */
+
+.logo-text{
+  text-decoration: none;
+  font-size: 48px;
+  color: aliceblue;
+  font-family: 'Metal Mania', cursive;
+}
+
+.logo-text:hover{
+  color: #3c3c3c;
+}
+
+.header{
+padding: 20px;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav-travel{
+  list-style: none;
+}
+
+.e{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link{
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.nav-link:hover{
+  color: gray;
+}
+
+button.contact-us {
+  max-height: 60px;
+  text-align: center;
+  background-color: #fff;
+  color: #3c3c3c;
+  border: 2px solid #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 2px 30px; /* Reduce padding to make button smaller */
+  font-size: 15px; /* Reduce font size to make text fit */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 15px;
+}
+
+button.contact-us:hover {
+  background-color: #3c3c3c;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .header {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .logo-text {
+  font-size: 36px;
+  }
+  
+  .nav-travel {
+  margin-top: 20px;
+  }
+  
+  .nav-link {
+  margin: 10px;
+  }
+  
+  button.contact-us {
+  max-height: 50px;
+  padding: 2px 20px;
+  font-size: 14px;
+  }
+  }
+
+/* Landing page */
+
+.informations-title{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Metal Mania', cursive !important;
+}
+
+.inf{
+  margin: 50px;
+
+}
+
+.first-part{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.first-part p{
+  text-orientation: sideways-right;
+}
+
+.infos{
+  font-size: 60px;
+}
+
+.info-number{
+  display: right;
+}
+
+.col{
+  display: flex;
+}
+
+.image-info{
+
+}
+
+.image-info img{
+  height: 350px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+/* Description + monter vers le haut */
+
+.info{
+
+}
+
+.info-event{
+
+}
+
+.info-details{
+  font-size: small;
+}
+
+/* Footer */
+
+.footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }

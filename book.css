@@ -9,10 +9,11 @@
 }
 
 body{
-  background-color: #3c3c3c;
+  background-color: #ffffff;
 }
 
 .corps{
+    background-color: white;
 }
 
 h1{
@@ -148,6 +149,11 @@ button.contact-us {
 
 /* Réserver une place */
 
+.search{
+  display: flex;
+  text-align: center;
+}
+
 .Bookh1{
   text-align: center;
   position: relative;
@@ -214,15 +220,14 @@ button.contact-us {
 }
 
 .partbook-3{
-  margin-left: auto;
-  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
 }
 
 .partbook-3 p{
-  flex-direction: row;
   text-align: center;
   font-size: 2em;
-  color: white;
 
 }
 
@@ -252,7 +257,7 @@ button.contact-us {
 
 .show-more {
   display: block;
-  margin: 15px auto;
+  margin: 0 auto;
   text-align: center;
   padding-bottom: 15px;
   border: none;
@@ -260,7 +265,7 @@ button.contact-us {
   font-size: 16px;
   font-weight: 600;
   padding: 10px 20px;
-  border-radius: 1px;
+  border-radius: 5px;
   background-color: #333;
   border: 1px solid #333;
   transition: all 0.2s ease-in-out;

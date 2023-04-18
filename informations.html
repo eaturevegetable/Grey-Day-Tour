@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="informations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Grey Day Tour</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicone/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicone/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicone/favicon-16x16.png">
+    <link rel="manifest" href="favicone/site.webmanifest">
+    <link rel="mask-icon" href="favicone/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="faviconemsapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+
+ <!-- Barre de navigation du site        -->
+    <header>
+        <nav class="header">
+            <h1 ><a href="index.html" class="logo-text">GreyDay Tour</a></h1>
+            <ul class="e">
+                <li class="nav-travel" href=""><a href="book.html" class="nav-link">Book</a></li>
+                <li class="nav-travel" href=""><a href="Informations.html" class="nav-link">Informations</a></li>
+                <li class="nav-travel" href=""><a href="Merch.html" class="nav-link">Merch</a></li>
+            </ul>
+            <button  onclick="window.location.href='formulaire.html'" class="contact-us">Contact Us</button>
+        </nav>
+        
+    </header>
+
+<!-- Première partie  -->
+
+    <h1 class="informations-title">Informations</h1>
+
+    <div class="inf">
+    <Div class="first-part">
+      <div class="infos">
+        <div class="col">
+          <p class="date">NUMBER OF DATES</p>
+          <p class="info-number">15</p>
+        </div>
+        <div class="col">
+          <p class="artists">ARTISTS</p>
+          <p class="info-number"></p>
+        </div>
+        <div class="col">
+          <p class="countries">COUNTRIES</p>
+          <p class="info-number"></p>
+        </div>    
+      </div>      <div class="image-info">
+        <img src="/logo.png" alt="logo G59">
+      </div>
+    </Div>
+  </div>
+
+<!-- Carrousel -->
+
+<div class="slideshow-container fade">
+    <!-- Full images with numbers and message Info -->
+    <div class="Containers">
+      <img src="/pictures/caroussel/chetta.png" style="width:100%">
+    </div>
+  
+    <div class="Containers">
+      <img src="/pictures/caroussel/shakewell.png" style="width:100%">
+    </div>
+  
+    <div class="Containers">
+      <img src="/pictures/caroussel/germ.png" style="width:100%">
+    </div>
+  
+    <div class="Containers">
+      <img src="/pictures/caroussel/skimask.png" style="width:100%">
+    </div>
+  
+    <!-- Back and forward buttons -->
+    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  
+  <script>
+  var slidePosition = 1;
+  SlideShow(slidePosition);
+  
+  // forward/Back controls
+  function plusSlides(n) {
+    SlideShow(slidePosition += n);
+  }
+  
+  //  images controls
+  function currentSlide(n) {
+    SlideShow(slidePosition = n);
+  }
+  
+  function SlideShow(n) {
+    var i;
+    var slides = document.getElementsByClassName("Containers");
+    var circles = document.getElementsByClassName("dots");
+    if (n > slides.length) {slidePosition = 1}
+    if (n < 1) {slidePosition = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < circles.length; i++) {
+        circles[i].className = circles[i].className.replace(" enable", "");
+    }
+    slides[slidePosition-1].style.display = "block";
+    circles[slidePosition-1].className += " enable";
+  } 
+  </script>
+
+
+<!-- Description + boutton pour remonter vers le haut  -->
+
+    <div class="info">
+        <h2 class="info-event"></h2>
+        <p class="info-details">
+            LIVE NATION (L-R-20-7529/L-R-22-1699) PRESENTS: This concert.
+             Due to scheduling issues, the $uicideboy$ concert originally scheduled for March 14, 2023 at Zénith Paris La Villette has been moved to March 8, 2023. 
+            Tickets remain valid. All sales are final and refunds are only allowed in limited circumstances, as explained in this section and the Canceled, Postponed, Rescheduled and Moved Events section above. Before purchasing tickets, carefully review your event and seat selection.
+        </p>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="footer">
+        <div class="row">
+            <a href="https://open.spotify.com/artist/1VPmR4DJC1PlOtd0IADAO0"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://www.instagram.com/suicideboys/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@uicideboy8995"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://soundcloud.com/g59"><i class="fa-brands fa-soundcloud"></i></a>
+        </div>
+    <div class="row">
+        <ul>
+            <li><a href="Contact.html">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+        </ul>
+    </div>
+    
+    <div class="row">
+    Grey Day Tour Copyright © 2023 Grey Day Tour - All rights reserved || Designed By: Antino 
+    </div>
+    </div>
+    </footer>
+</body>
+
+</html>
